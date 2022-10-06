@@ -2,13 +2,9 @@ import { majorArcanaMap } from '../common/utilities/readings/majorArcanaMap';
 import { getCardName } from '../common/utilities/readings/getCardName';
 
 type MappedCardProps = {
-  num: number;
+  cardName: string;
 };
 
-const MappedCard = ({ num }: MappedCardProps) => (
-  <h6>
-    {num}. - {getCardName(num)}
-  </h6>
-);
+const MappedCard = ({ cardName }: MappedCardProps) => <h6>{cardName}</h6>;
 
 export default MappedCard;

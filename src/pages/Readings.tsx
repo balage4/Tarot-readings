@@ -4,7 +4,7 @@ import { createDraw } from '../common/utilities/readings/createDraw';
 import MappedCard from '../components/MappedCard';
 
 const Readings = () => {
-  const [reading, setReading] = useState<number[]>([]);
+  const [reading, setReading] = useState<string[]>([]);
 
   const handleClick = () => setReading(createDraw(78, 10));
 
@@ -16,8 +16,8 @@ const Readings = () => {
       </Button>
       <Container>
         {reading &&
-          reading.map((num, i) => (
-            <MappedCard key={`drawed_num${i}`} num={num} />
+          reading.map((cardName, i) => (
+            <MappedCard key={`drawed_num${i}`} cardName={cardName} />
           ))}
       </Container>
     </div>
