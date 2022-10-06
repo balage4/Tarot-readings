@@ -18,11 +18,11 @@ export const domRoutes: Array<singleRoute> = [
   {
     path: '/login',
     element: Login,
-    protected: true,
+    protected: false,
   },
   {
     path: 'readings',
     element: Readings,
-    protected: true,
+    protected: false,
   },
 ];
