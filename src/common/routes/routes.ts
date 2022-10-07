@@ -5,24 +5,24 @@ import Readings from '../../pages/Readings';
 
 type singleRoute = {
   path: string;
-  element: React.FC;
   protected: boolean;
+  element: React.FC;
 };
 
 export const domRoutes: Array<singleRoute> = [
   {
     path: '/',
-    element: Home,
     protected: false,
+    element: Home,
   },
   {
     path: '/login',
-    element: Login,
     protected: false,
+    element: Login,
   },
   {
     path: 'readings',
-    element: Readings,
     protected: false,
+    element: Readings,
   },
 ];
