@@ -1,12 +1,7 @@
-type computeCardType = {
-  [key: string]: number;
-};
+import { CardNamesType } from '../../../types/CardNameType';
+import { ComputeCardType } from '../../../types/ComputeCardType';
 
-type cardNamesType = {
-  [key: string]: string;
-};
-
-export const computeCard: computeCardType = {
+export const computeCard: ComputeCardType = {
   major: 0,
   wands: 22,
   cups: 36,
@@ -14,7 +9,7 @@ export const computeCard: computeCardType = {
   coins: 64,
 };
 
-export const cardNames: cardNamesType = {
+export const cardNames: CardNamesType = {
   0: 'Ace',
   1: 'Two',
   2: 'Three',

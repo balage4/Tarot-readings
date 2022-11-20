@@ -1,9 +1,6 @@
-type MinorArcana = {
-  suits: Array<string>;
-  deckLengthBySuit: number;
-};
+import { MinorArcanaType } from '../../../types/MinorArcanaType';
 
-export const minorArcana: MinorArcana = {
+export const minorArcana: MinorArcanaType = {
   suits: ['wands', 'cups', 'swords', 'coins'],
   deckLengthBySuit: 14,
 };

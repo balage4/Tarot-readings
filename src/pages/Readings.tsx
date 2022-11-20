@@ -12,12 +12,16 @@ const Readings = () => {
     <div>
       <h2>Readings</h2>
       <Button variant="warning" onClick={handleClick}>
-        Kever
+        Draw
       </Button>
       <Container>
         {reading &&
-          reading.map((cardName, i) => (
-            <MappedCard key={`drawed_num${i}`} cardName={cardName} />
+          reading.map((cardName, cardIndex) => (
+            <MappedCard
+              key={`drawed_num${cardIndex}`}
+              cardIndex={cardIndex}
+              cardName={cardName}
+            />
           ))}
       </Container>
     </div>

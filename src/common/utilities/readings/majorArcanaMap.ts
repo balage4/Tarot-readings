@@ -1,8 +1,6 @@
-type MajorArcana = {
-  [key: string]: string;
-};
+import { MajorArcanaType } from "../../../types/MajorArcanaType";
 
-export const majorArcanaMap: MajorArcana = {
+export const majorArcanaMap: MajorArcanaType = {
   0: 'The Fool',
   1: 'The Magician',
   2: 'The High Priestess',
